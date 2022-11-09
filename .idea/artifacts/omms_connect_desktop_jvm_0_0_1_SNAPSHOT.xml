@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="omms-connect-desktop-jvm-0.0.1-SNAPSHOT">
+    <output-path>$PROJECT_DIR$/build/libs</output-path>
+    <root id="archive" name="omms-connect-desktop-jvm-0.0.1-SNAPSHOT.jar">
+      <element id="module-output" name="omms-connect-desktop.jvmMain" />
+    </root>
+  </artifact>
+</component>
