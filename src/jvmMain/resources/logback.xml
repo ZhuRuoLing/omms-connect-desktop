@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration scan="true" scanPeriod="60 seconds" debug="false">
 
-    <contextName>omms-central</contextName>
+    <contextName>omms-connect-desktop</contextName>
     <property name="LOG_HOME" value="logs"/>
 
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
@@ -9,7 +9,7 @@
             <level>INFO</level>
         </filter>
         <encoder>
-            <pattern>[%cyan(%d{yyyy-MM-dd HH:mm:ss.SSS})] [%boldYellow(%thread)/%highlight(%level)]: %msg%n</pattern>
+            <pattern>[%cyan(%d{yyyy-MM-dd HH:mm:ss.SSS})] [%boldYellow(%thread) | %green(%logger)] %highlight(%level) %msg %n</pattern>
         </encoder>
     </appender>
 

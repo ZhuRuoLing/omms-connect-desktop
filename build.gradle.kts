@@ -8,13 +8,22 @@ plugins {
 }
 
 group = "net.zhuruoling.omms"
-version = "1.0-SNAPSHOT"
+version = "0.0.1-SNAPSHOT"
 
 repositories {
     google()
     mavenCentral()
     maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
+
 }
+/*
+dependencies {
+    implementation("org.slf4j:slf4j-api:2.0.3")
+    implementation("ch.qos.logback:logback-classic:1.4.4")
+}
+*/
+
+
 
 kotlin {
     jvm {
@@ -24,6 +33,10 @@ kotlin {
         withJava()
     }
     sourceSets {
+        dependencies {
+            commonMainImplementation("org.slf4j:slf4j-api:2.0.3")
+            commonMainImplementation("ch.qos.logback:logback-classic:1.4.4")
+        }
         val jvmMain by getting {
             dependencies {
                 implementation(compose.desktop.currentOs)
